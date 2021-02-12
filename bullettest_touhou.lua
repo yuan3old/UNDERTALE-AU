@@ -25,13 +25,13 @@ function Update()
         local offset = bullet.GetVar('offset')
         local lerp = bullet.GetVar('lerp')
         local neg = 1
-        local posx = (70*lerp)*math.sin(timer*bullet.GetVar('negmult') + offset)
-        local posy = (70*lerp)*math.cos(timer + offset) + yOffset - lerp*50
+        local posx = (270*lerp)*math.sin(timer*bullet.GetVar('negmult') + offset)
+        local posy = (270*lerp)*math.cos(timer + offset) + yOffset - lerp*50
         bullet.MoveTo(posx, posy)
-        bullet.SetVar('timer', timer + 1/40)
+        bullet.SetVar('timer', timer + 1/20)
         lerp = lerp + 1 / 90
-        if lerp > 4.0 then
-            lerp = 4.0
+        if lerp > 6.0 then
+            lerp = 6.0
         end
         bullet.SetVar('lerp', lerp)
     end
