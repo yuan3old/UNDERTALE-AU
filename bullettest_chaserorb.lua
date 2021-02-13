@@ -1,4 +1,3 @@
--- The chasing attack from the documentation example.
 chasingbullet = CreateProjectile('bullet', Arena.width/2, Arena.height/2)
 chasingbullet.SetVar('xspeed', 0)
 chasingbullet.SetVar('yspeed', 0)
