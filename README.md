@@ -13,5 +13,5 @@ Complete the most basic structure.
 > ### 2.13优化祖安系统，增加**一点点**难度  
 Increase the difficulty.
 > ### 2.14敌人血量增加，删除miss，减轻难度，减轻伪无缝的概率  
-Enemy increased life. Delete *MISS*
+Enemy increased life. Delete *MISS*.
 
