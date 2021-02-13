@@ -1,4 +1,3 @@
- -- The bouncing bullets attack from the documentation example.
 spawntimer = 0
 bullets = {}
 
