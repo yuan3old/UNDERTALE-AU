@@ -1,7 +1,6 @@
--- You've seen this one in the trailer (if you've seen the trailer).
 spawntimer = 0
 bullets = {}
-yOffset = 180
+yOffset = 200
 mult = 0.5
 
 function Update()
@@ -11,7 +10,7 @@ function Update()
         for i=1,numbullets+1 do
             local bullet = CreateProjectile('bullet', 0, yOffset)
             bullet.SetVar('timer', 0)
-            bullet.SetVar('offset', math.pi * 2 * i / numbullets)
+            bullet.SetVar('offset', math.pi * 8 * i / numbullets)
             bullet.SetVar('negmult', mult)
             bullet.SetVar('lerp', 0)
             table.insert(bullets, bullet)
@@ -25,11 +24,11 @@ function Update()
         local offset = bullet.GetVar('offset')
         local lerp = bullet.GetVar('lerp')
         local neg = 1
-        local posx = (270*lerp)*math.sin(timer*bullet.GetVar('negmult') + offset)
-        local posy = (270*lerp)*math.cos(timer + offset) + yOffset - lerp*50
+        local posx = (170*lerp)*math.sin(timer*bullet.GetVar('negmult') + offset)
+        local posy = (130*lerp)*math.cos(timer + offset) + yOffset - lerp*50
         bullet.MoveTo(posx, posy)
         bullet.SetVar('timer', timer + 1/20)
-        lerp = lerp + 1 / 90
+        lerp = lerp + 1 / 50
         if lerp > 6.0 then
             lerp = 6.0
         end
