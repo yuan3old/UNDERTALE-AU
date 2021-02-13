@@ -1,6 +1,3 @@
--- A basic encounter script skeleton you can copy and modify for your own creations.
-
--- music = "shine_on_you_crazy_diamond" --Either OGG or WAV. Extension is added automatically. Uncomment for custom music.
 encountertext = "Surprise Motherfucker." --Modify as necessary. It will only be read out in the action select screen.
 nextwaves = {"bullettest_chaserorb"}
 wavetimer = 7.5
