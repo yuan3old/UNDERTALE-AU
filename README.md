@@ -7,7 +7,7 @@ I'm a student.So the update will be slow.
 
 
 
-更新情况：  
+# 更新情况：  
 # Update：
 > ### 2.12初步完善完成，更新了行动  
 Complete the most basic structure.
