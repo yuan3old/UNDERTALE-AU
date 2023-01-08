@@ -19,12 +19,12 @@ function Update()
         local newposx = bullet.x + velx
         local newposy = bullet.y + vely
         if(bullet.x > -Arena.width/2 and bullet.x < Arena.width/2) then
-            if(bullet.y < -Arena.height/2 + 8) then 
-                newposy = -Arena.height/2 + 8
+            if(bullet.y < -Arena.height/2 + 9) then 
+                newposy = -Arena.height/2 + 9
                 vely = 4
             end
         end
-        vely = vely - 0.04
+        vely = vely - 0.05
         bullet.MoveTo(newposx, newposy)
         bullet.SetVar('vely', vely)
     end
